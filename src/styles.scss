@@ -1,0 +1,195 @@
+
+#SpotifyLogo{
+    width: 40%;
+}
+
+::-webkit-scrollbar {
+    width: 18px;
+    background: #121212;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    background: #121212;
+  }
+   
+  
+  ::-webkit-scrollbar-thumb {
+    background:#1AA64B; 
+    border-radius: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:#6ED291;
+  }
+
+  @import '~bootstrap/dist/css/bootstrap.min.css';
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+$primary: #1ed760;
+
+body {
+    margin: 0;
+    font-family: 'Nunito', 'sans-serif';
+    background-image: linear-gradient(#3F3F3F,#121212);
+    font-size: 26px;
+}
+#LocalArtists{
+    background-image: linear-gradient(to right,  #15965f,#FFFFFF, #f7843c); 
+    
+    text-decoration: none;
+}
+
+
+header {
+    a {
+        color: black;
+        text-decoration: none;
+        
+    }
+    a.logo {
+        font-weight: bold;
+        
+    }
+
+    .container-fluid{
+    z-index: 999 !important;
+        
+   position: fixed;
+   width: 100%;
+   top: 0;
+   float: left;
+   background: $primary;
+   padding-top: 0.5%;
+  padding-bottom: 0.2%;
+ 
+   
+   margin:0px auto;
+   left:0px;
+   right:0px;
+
+#SpotifyLogo{
+ margin-top:-0.4%;
+  }
+
+        ul {
+            list-style-type: none;
+            margin-right: -3.5%;
+            display: flex;
+            float: right;
+           
+            padding-right: 3%;
+           
+            
+           
+            
+            li a {
+                
+                padding: 0.8em;
+                
+                &:hover {
+                    color:lighten($primary, 100%);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+h1 {
+    margin-top: 2em;
+}
+
+footer {
+    background: #189443;
+    padding: 1em 0;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a.logo {
+        font-weight: bold;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+
+            li a {
+                padding: 1em;
+
+                &:hover {
+                    color:lighten($primary, 100%);
+                    
+                }
+            }
+        }
+    }
+
+}
+h5 {
+    margin-top: -2%;
+    padding-left: 70%;
+}
+h6 {
+    padding-left: 10%;
+}
+
+.fas {
+    position: absolute;
+    margin-top: -3%;
+    padding-bottom: -10%;
+    padding-left: 85%;
+   font-size: 40px;
+   &:hover {
+    color:darken($primary, 25%);
+    text-decoration: none;
+}
+}
+.autocomplete-container .input-container input{
+    height: var(--height);
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+    padding-left: 10px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    margin-top: 2%;
+    margin-left: 36%;
+    font-size: 1.8rem;
+    border-radius: 26px;
+    outline: 0;
+    width: 30% !important;
+    display: flex;
+    z-index: 0;
+  }
+.autocomplete-container .suggestions-container{
+    height: var(--height);
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+
+    margin-bottom: 2%;
+    margin-left: 36%;
+    font-size: 1.8rem;
+    border-radius: 26px;
+    outline: 0;
+    width: 30% !important;
+    display: block;
+  }
+  .autocomplete-container{
+      box-shadow: none !important;
+  }

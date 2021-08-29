@@ -1,0 +1,54 @@
+
+  .ng-autocomplete .autocomplete-container .input-container input,input, button {
+    height: var(--height);
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 38%;
+    font-size: 1.8rem;
+    border-radius: 26px;
+    outline: 0;
+    
+  }
+  .autocomplete-container .input-container input{
+    height: var(--height);
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 38%;
+    font-size: 1.8rem;
+    border-radius: 26px;
+    outline: 0;
+
+  }
+
+  iframe {
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+h2 {
+  color: white;
+  text-align: center;
+  padding-bottom: 3%;
+}
+h3 {
+  color: black;
+  text-align: center;
+  padding-bottom: 3%;
+}
+#LocalArtists {
+  color: black;
+}
+
+
+ 

@@ -1,0 +1,190 @@
+
+<section id="LocalArtists" class="filter-wrapper">
+<br>
+
+    <!--Ireland country code ISO 3166-2:IE-->
+
+    <div class="keyword-wrapper">
+        <ng-autocomplete 
+        id="search"
+        [data]="data"
+        [searchKeyword]="keyword"
+        (selected)='selectEvent($event)'
+        (inputChanged)='getartistdata($event)'
+        [itemTemplate]="itemTemplate"
+        placeholder="Search for Local Artists">                                 
+        </ng-autocomplete>
+        <ng-template #itemTemplate let-item>
+            <a [innerHTML]="item.name"></a>
+            </ng-template>
+        <!-- <input id="search" type="search" inputField type="text" id="keyword"
+        placeholder="Search for Local Artists" autofocus> -->
+    </div>
+    <br />
+    <h3>Spotify Current Top Local Artists </h3>
+    <iframe src="https://open.spotify.com/embed/artist/5KNNVgR6LBIABRIomyCwKJ" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/artist/2FXC3k01G6Gw61bmprjgqS" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/artist/3VLf4DlBTN2ZRwygS3TNti" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/artist/2tppd6KkhK4ULAd217Ecq1" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+<ul class="filter-select">
+    <div *ngFor="let result of searchResults">
+    <li class="filter-select-list">
+        <img src="{{result.images['2']?.url}}" alt="
+        {{result.name}}" width="50" height="50">
+        <p class="artist-name">{{result.name}}</p>
+        
+    </li>
+     
+    
+ 
+</div>
+</ul>
+</section>
+<section id="Artists" class="filter-wrapper">
+    
+    <div class="keyword-wrapper">
+        <br>
+        <ng-autocomplete 
+        id="search"
+        [data]="data"
+        [searchKeyword]="keyword"
+        (selected)='selectEvent($event)'
+        (inputChanged)='getartistdata($event)'
+        [itemTemplate]="itemTemplate"
+        placeholder="Search for Artists">                                 
+        </ng-autocomplete>
+        <ng-template #itemTemplate let-item>
+            <a [innerHTML]="item.name"></a>
+            </ng-template>
+        <!-- <input id="search" type="search" inputField type="text" id="keyword"
+        placeholder="Search for Artists" autofocus> -->
+    </div>
+    <br>
+    <h2>Spotify Current Top Artists</h2>
+    <iframe src="https://open.spotify.com/embed/artist/3VLf4DlBTN2ZRwygS3TNti" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/artist/2FXC3k01G6Gw61bmprjgqS" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/artist/2D4FOOOtWycb3Aw9nY5n3c" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/artist/5cIc3SBFuBLVxJz58W2tU9" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+<ul class="filter-select">
+    <div *ngFor="let result of searchResults">
+    <li class="filter-select-list">
+        <img src="{{result.images['2']?.url}}" alt="
+        {{result.name}}" width="50" height="50">
+        <p class="artist-name">{{result.name}}</p>
+        
+    </li>
+    
+ 
+</div>
+</ul>
+</section>
+
+
+<section id="Playlists" class="filter-wrapper">
+    
+    <div class="keyword-wrapper">
+        <br>
+        <ng-autocomplete 
+        id="search"
+        [data]="data"
+        [searchKeyword]="keyword"
+        (selected)='selectEvent($event)'
+        (inputChanged)='getplaylistdata($event)'
+        [itemTemplate]="itemTemplate"
+        placeholder="Search for Playlists">                                 
+        </ng-autocomplete>
+        <ng-template #itemTemplate let-item>
+            <a [innerHTML]="item.name"></a>
+            </ng-template>
+    </div>
+    <br>
+    <h2>Spotify Current Top Playlists</h2>
+    <iframe src="https://open.spotify.com/embed/playlist/6y5g8un8TslAWFwdW4XVjA" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/34Fd8naVjaang4yq7Sg77u" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1Epn7lMRAJFEBu" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1E36mV2K13NVXf" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<ul  class="filter-select">
+    <div *ngFor="let result of searchResults">
+    <li><a class="filter-select-list">
+        <img src="{{result.images['2']?.url}}" alt="
+        {{result.name}}" width="50" height="50">
+        <p class="playlist-name">{{result.name}}</p>
+        </a>
+    </li>
+ 
+</div>
+</ul>
+</section>
+<section id="Albums" class="filter-wrapper">
+    
+    <div class="keyword-wrapper">
+        <br>
+        <ng-autocomplete 
+        id="search"
+        [data]="data"
+        [searchKeyword]="keyword"
+        (selected)='selectEvent($event)'
+        (inputChanged)='getalbumdata($event)'
+        [itemTemplate]="itemTemplate"
+        placeholder="Search for Albums">                                 
+        </ng-autocomplete>
+        <ng-template #itemTemplate let-item>
+            <a [innerHTML]="item.name"></a>
+            </ng-template>
+    </div>
+    <br>
+    <h2>Spotify Current Top Albums</h2>
+    <iframe src="https://open.spotify.com/embed/album/4lLoFuJDRHphqhX6FD2kTc" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/album/4hBY6koOobkXGSOEPndLXK" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/album/0Uv83rRhY5QvHKkQoULRKk" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/album/0E4xv5gPjykrwBgBZzI8XG" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<ul  class="filter-select">
+    <div *ngFor="let result of searchResults">
+    <li class="filter-select-list">
+        <img src="{{result.images['2']?.url}}" alt="
+        {{result.name}}" width="50" height="50">
+        <p class="album-name">{{result.name}}</p>
+    </li>
+ 
+</div>
+</ul>
+</section>
+
+<section id="Songs" class="filter-wrapper">
+    
+    <div class="keyword-wrapper">
+        <br>
+        <ng-autocomplete 
+        id="search"
+        [data]="data"
+        [searchKeyword]="keyword"
+        (selected)='selectEvent($event)'
+        (inputChanged)='getsongdata($event)'
+        [itemTemplate]="itemTemplate"
+        placeholder="Search for Songs">                                 
+        </ng-autocomplete>
+        <ng-template #itemTemplate let-item>
+            <a [innerHTML]="item.name"></a>
+            </ng-template>
+    </div>
+    <br>
+    <h2>Spotify Current Top Songs</h2>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZEVXbKM896FDX8L1" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZEVXbLnolsZ8PSNw" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF" width="450" height="700"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<ul class="filter-select">
+    <div *ngFor="let result of searchResults">
+    <li class="filter-select-list">
+        <img src="{{result.images['2']?.url}}" alt="
+        {{result.name}}" width="50" height="50">
+        <p class="song-name">{{result.name}}</p>
+    </li>
+ 
+</div>
+</ul>
+</section>
+
+
