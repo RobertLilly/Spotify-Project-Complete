@@ -34,8 +34,8 @@ export class SearchComponent implements OnInit {
   getartistdata(e){
     this.datas.q=e;
     this.datas.type='artist';
-    this.datas.limit='10'
-    this.datas.offset='5'
+    this.datas.limit='4'
+    this.datas.offset='0'
     this.data = [];
     this.apicall.get(this.datas).subscribe((res:any)=>{
       this.data=res.artists.items;
@@ -45,8 +45,8 @@ export class SearchComponent implements OnInit {
   getplaylistdata(e){
     this.datas.q=e;
     this.datas.type='playlist';
-    this.datas.limit='10'
-    this.datas.offset='5'
+    this.datas.limit='4'
+    this.datas.offset='0'
     this.data = [];
     
     this.apicall.get(this.datas).subscribe((res:any)=>{
@@ -57,8 +57,8 @@ export class SearchComponent implements OnInit {
   getalbumdata(e){
     this.datas.q=e;
     this.datas.type='album';
-    this.datas.limit='10'
-    this.datas.offset='5'
+    this.datas.limit='4'
+    this.datas.offset='0'
     this.data = [];
     
     this.apicall.get(this.datas).subscribe((res:any)=>{
@@ -69,8 +69,8 @@ export class SearchComponent implements OnInit {
   getsongdata(e){
     this.datas.q=e;
     this.datas.type='track';
-    this.datas.limit='10'
-    this.datas.offset='5'
+    this.datas.limit='4'
+    this.datas.offset='0'
     this.data = [];
     
     this.apicall.get(this.datas).subscribe((res:any)=>{
