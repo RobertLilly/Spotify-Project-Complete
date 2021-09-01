@@ -1,3 +1,4 @@
+NB Token needs to be generated and updated from https://developer.spotify.com/console/get-album-tracks/ and then put into the src/app/interceptor/AddHeader.Interceptor.ts file in the single quotations mark after const token=
 # SpotifyProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
